@@ -1677,6 +1677,7 @@ bool written = false;
         break;
     case '3': //view log book
         logBook(playerName, myPlanet, habitableTraits, uninhabitableTraits, alienClaim);
+        cout << endl;
         break;
     case '4': //access resource center
         choice = 1;

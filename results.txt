@@ -1,6 +1,120 @@
-d's Log Book page #1: Planet 7S610Yrots
+Donovan's Log Book page #1: Planet 4741EKcoat
+Planet size (in diameter of 1000 kms): 6
+Planet's carrying capacity (in millions): 3690
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #1: Planet 4741EKcoat
+Planet size (in diameter of 1000 kms): 6
+Planet's carrying capacity (in millions): 3690
+Habitable traits discovered: Water
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #1: Planet 4741EKcoat
+Planet size (in diameter of 1000 kms): 6
+Planet's carrying capacity (in millions): 3690
+Habitable traits discovered: Water
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #1: Planet 4741EKcoat
+Planet size (in diameter of 1000 kms): 6
+Planet's carrying capacity (in millions): 3690
+Habitable traits discovered: Water
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #2: Planet B12S91rebs
 Planet size (in diameter of 1000 kms): 5
 Planet's carrying capacity (in millions): 3075
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #3: Planet 9OPUOLteam
+Planet size (in diameter of 1000 kms): 8
+Planet's carrying capacity (in millions): 4920
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #4: Planet UB3KA7dust
+Planet size (in diameter of 1000 kms): 4
+Planet's carrying capacity (in millions): 2460
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #5: Planet 7L5D62odes
+Planet size (in diameter of 1000 kms): 7.5
+Planet's carrying capacity (in millions): 4612.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #6: Planet 7L5D62odes
+Planet size (in diameter of 1000 kms): 7.5
+Planet's carrying capacity (in millions): 4612.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #7: Planet 562M0Fhats
+Planet size (in diameter of 1000 kms): 7
+Planet's carrying capacity (in millions): 4305
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #8: Planet 562M0Fhats
+Planet size (in diameter of 1000 kms): 7
+Planet's carrying capacity (in millions): 4305
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #9: Planet K74F2Froue
+Planet size (in diameter of 1000 kms): 3
+Planet's carrying capacity (in millions): 1845
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #10: Planet 35GYI8case
+Planet size (in diameter of 1000 kms): 6.5
+Planet's carrying capacity (in millions): 3997.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #11: Planet VSEOU6lits
+Planet size (in diameter of 1000 kms): 2.5
+Planet's carrying capacity (in millions): 1537.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #12: Planet 4C3HG4tony
+Planet size (in diameter of 1000 kms): 6
+Planet's carrying capacity (in millions): 3690
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #13: Planet DP5A0Zetym
+Planet size (in diameter of 1000 kms): 2
+Planet's carrying capacity (in millions): 1230
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #14: Planet LJZJ42alee
+Planet size (in diameter of 1000 kms): 1.5
+Planet's carrying capacity (in millions): 922.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #15: Planet T06VO5seek
+Planet size (in diameter of 1000 kms): 1
+Planet's carrying capacity (in millions): 615
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #16: Planet 81WLATcold
+Planet size (in diameter of 1000 kms): 4.5
+Planet's carrying capacity (in millions): 2767.5
+Habitable traits discovered: 
+Non-habitable traits discovered: 
+Friendly alien assessment: 
+Donovan's Log Book page #17: Planet E9UE9Qmail
+Planet size (in diameter of 1000 kms): 8
+Planet's carrying capacity (in millions): 4920
 Habitable traits discovered: 
 Non-habitable traits discovered: 
 Friendly alien assessment: 
