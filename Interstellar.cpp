@@ -18,19 +18,16 @@ using namespace std;
 
 int split(string inputString, char separator, string arr[], int size){
 
-//initialize variables
 int pieces = 0;
 int count = 0;
 int start = 0;
 int end = 0;
 int j = 0;
 
-//if we have an empty string, return 0
 if (inputString.empty()){
     return 0;
 }
 
-//count delimiters in string
 for (int i = 0; i < inputString.size(); i++)
 {
     if (inputString[i] == separator)
@@ -39,24 +36,22 @@ for (int i = 0; i < inputString.size(); i++)
     }
 }
 
-//if we have no commas, return 1
 if (count == 0)
 {
     arr[0] = inputString;
     return 1;
 }
 
-//store strings in array
-while (end < inputString.size() && j < size) //run this loop until the end of the array
+while (end < inputString.size() && j < size) 
 {
-    while (inputString[end] != separator && end < inputString.size()) //increment end until delimiter met
+    while (inputString[end] != separator && end < inputString.size()) 
     {
         end++;
     }
 
     int len = end - start;
 
-    arr[j] = inputString.substr(start, len); //store substring into array
+    arr[j] = inputString.substr(start, len);
     
     start = end + 1; //start is end + 1 because end will be at the position of a delimiter; we want to start at the next character
     end++; //increment end by one so that it will be at the place of the next character
@@ -131,6 +126,7 @@ vector<int> findFreeSpace(Map map, int row, int col){ //this function returns th
 }
 
 int buySuit(Mission yourMission, Suit yourSuit, int c1){
+            
             cout << "Would you like to upgrade your spacesuit to any of these? The space suit health will be set to 100%." << endl;
             cout << "1. Space suit grade 2 is $5,000" << endl;
             cout << "2. Space suit grade 3 is $10,000" << endl;
@@ -138,29 +134,29 @@ int buySuit(Mission yourMission, Suit yourSuit, int c1){
             cout << "4. Space suit grade 5 is $20,000" << endl;
             cin >> c1;
             
-            if (((c1+1)-yourSuit.getSuitGrade()) * 5000 <= yourMission.getMyMoney()){ //if the user has enough money, they can purchase a suit upgrade
+            if (((c1+1)-yourSuit.getSuitGrade()) * 5000 <= yourMission.getMyMoney()){
                 switch (c1)
                 {
                 case 1:
-                    yourMission.setMyMoney(0, ((2-yourSuit.getSuitGrade()) * 5000)); //this charges only based on the difference in suit grade.
+                    yourMission.setMyMoney(0, ((2-yourSuit.getSuitGrade()) * 5000));
                     yourSuit.setSuitGrade(2);
                     cout << "Your spacesuit is now a grade " << yourSuit.getSuitGrade() << "." << endl;
                     cout << "You have $" << yourMission.getMyMoney() << " left." << endl;
                     break;
                 case 2:
-                    yourMission.setMyMoney(0, (3-yourSuit.getSuitGrade()) * 5000); //this charges only based on the difference in suit grade.
+                    yourMission.setMyMoney(0, (3-yourSuit.getSuitGrade()) * 5000);
                     yourSuit.setSuitGrade(3);
                     cout << "Your spacesuit is now a grade " << yourSuit.getSuitGrade() << "." << endl;
                     cout << "You have $" << yourMission.getMyMoney() << " left." << endl;
                     break;
                 case 3:
-                    yourMission.setMyMoney(0, (4-yourSuit.getSuitGrade()) * 5000); //this charges only based on the difference in suit grade.
+                    yourMission.setMyMoney(0, (4-yourSuit.getSuitGrade()) * 5000);
                     yourSuit.setSuitGrade(4);
                     cout << "Your spacesuit is now a grade " << yourSuit.getSuitGrade() << "." << endl;
                     cout << "You have $" << yourMission.getMyMoney() << " left." << endl;
                     break;
                 case 4:
-                    yourMission.setMyMoney(0, (5-yourSuit.getSuitGrade()) * 5000); //this charges only based on the difference in suit grade.
+                    yourMission.setMyMoney(0, (5-yourSuit.getSuitGrade()) * 5000);
                     yourSuit.setSuitGrade(5);
                     cout << "Your spacesuit is now a grade " << yourSuit.getSuitGrade() << "." << endl;
                     cout << "You have $" << yourMission.getMyMoney() << " left." << endl;
@@ -266,7 +262,6 @@ int accuratelyHabitable = 0;
 int inaccuratelyHabitable = 0;
 
 //clear write file if it was written to in a previous game
-//soure for truncate: https://stackoverflow.com/questions/17032970/clear-data-inside-text-file-in-c
 write.open("results.txt", ofstream::out | ofstream::trunc); 
 write.close();
 
@@ -277,7 +272,8 @@ getline(cin, playerName);
 cout << "Pick a crewmate to help you with your journey!" << endl;
 
 int crewMembers = 0;
-while (crewMembers <= 1) //character selection
+
+while (crewMembers <= 1)
 {
 /*
 Character Selection Menu Algorithm
@@ -302,13 +298,13 @@ Character Selection Menu Algorithm
 
             }
 
-        charNames[charNum] = storeChar[0]; //this array will hold the names of each character in order for future reference
         charNum++;
+        charNames[charNum] = storeChar[0];
         line = "";
         }
         file.close();
 
-        charNum = 0; //reset char num to zero so that the menu will start at one the next time a selection is made
+        charNum = 0;
 
         cin >> charChoice;
         //add characters
@@ -322,7 +318,7 @@ Character Selection Menu Algorithm
         }
         else if(charChoice == '3'){
             millie = true;
-            myStatus.setFuel(myStatus.getFuel(), 0); //if millie tycoon, double fuel
+            myStatus.setFuel(myStatus.getFuel(), 0);
             charChoiceNum = 3;
         }
         else if(charChoice == '4'){
@@ -330,7 +326,7 @@ Character Selection Menu Algorithm
             charChoiceNum = 4;
         }
 
-        if (crewMembers == 0) //only output this text after picking the first character
+        if (crewMembers == 0)
         {
             cout << "Great choice! " << charNames[charChoiceNum-1] << " will bring a lot to your team. Pick your last crewmate." << endl;
         }
@@ -352,13 +348,13 @@ Character Selection Menu Algorithm
             
             for (int i = 0; i < 1; i++)
             {
-                if (storeChar[0] != charNames[charChoiceNum-1]) //delete the line at the selected character
+                if (storeChar[0] != charNames[charChoiceNum-1])
                 {
-                    write << line << endl; //write all characters' info except for the selected one to a new txt file
+                    write << line << endl;
                 }
             }
             
-            fileName = "tempCrew.txt"; //give filename the name of the file that will hold the names of the now available characters
+            fileName = "tempCrew.txt";
             
         }
         
@@ -378,10 +374,11 @@ cout << endl;
 /*
 RESOURCE CENTER------------------------------------------------------------------------------------------------------------------------------
 */
+
 fileName = "resource_center_info.txt";
 file.open(fileName);
 
-while (getline(file, line)) //print resource center info
+while (getline(file, line))
 {
     cout << line << endl;
 }
@@ -390,7 +387,7 @@ file.close();
 cout << "Hit enter when you have understood." << endl;
 
 string s; 
-cin.ignore(); //take enter as correct input
+cin.ignore();
 getline(cin, s);
 
 int choice = 1; 
@@ -440,11 +437,11 @@ while (choice != 6)
                     case 1:
                         cout << "How many Light Sabers would you like ($1000 each)?" << endl;
                         cin >> choice3;
-                        if (choice3 == 0 || choice3 == 1 || choice3 == 2) //if the user wants a valid number of light sabers
+                        if (choice3 == 0 || choice3 == 1 || choice3 == 2) 
                         {
-                            if (lightSaber.getWeaponCost() * choice3 <= myMission.getMyMoney()){ //check if they have enough $
+                            if (lightSaber.getWeaponCost() * choice3 <= myMission.getMyMoney()){
 
-                            for (int i = 0; i < choice3; i++) //check if they have enough space
+                            for (int i = 0; i < choice3; i++)
                             {
                                 if(weaponSpaces >= 1){ //if there is an empty space in the weapons inventory
                                     weaponsHeld[i] = lightSaber; //store the purchased weapon
@@ -889,9 +886,20 @@ srand(time(NULL));
         int randCol;
         int randType = float(1 + rand() % 6); //random type between 1 and 6
         vector<int> Coordinates(2);
-
-        Coordinates = findFreeSpace(myMap, randRow, randCol); //this guarantees that generated coordinates are a free space
-        myMap.spawnSite(Coordinates[0], Coordinates[1], randType); //spawn site there
+        int badSites = 0;
+        
+        if (randType == 4 || randType == 5 || randType == 6) //only accept up to three uninhabitable traits per map generated
+        {
+            badSites++;
+            if (badSites >= 3)
+            {
+                randType -= 3;
+            }
+            
+        }
+        
+        Coordinates = findFreeSpace(myMap, randRow, randCol); //the findFreeSpace function guarantees that generated coordinates are vacant
+        myMap.spawnSite(Coordinates[0], Coordinates[1], randType);
     }
 
     for (int i = 0; i < 2; i++) //spawn two hostile aliens
@@ -930,6 +938,7 @@ srand(time(NULL));
 
 //MAIN MENU / PHASE 2------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 char input;
+bool written = false;
 
 while (input != '7')
 {
@@ -948,7 +957,6 @@ while (input != '7')
         break;
     }
 
-bool written = false;
     if (!written) //write first page of the log book
         {
         //open file in append mode. source: https://stackoverflow.com/questions/4155537/writing-into-a-text-file-without-overwriting-it
@@ -2390,7 +2398,8 @@ bool written = false;
         }
         
         }
-        wormhole = ' ';  
+        wormhole = ' ';
+        written = false;
         break;
     case '7':
         cout << "Are you sure you want to give up? [y/n]" << endl;
@@ -2403,6 +2412,7 @@ bool written = false;
         }
         else if (charChoice == 'n')
         {
+            input = 0;
             break;
         }
         else{
